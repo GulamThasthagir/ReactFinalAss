@@ -6,8 +6,142 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+*{
+  margin:0px;
+  padding:0px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.main_div{
+  border:2px solid black;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+.inputs{
+  width:110%;
+  height: 25px;
+  border:2px solid black;
+  margin-top: 5%;
+}
+.password{
+  border:4px solid ghostwhite;
+  /* margin-top: 2%;
+  margin-left: 65%; */
+  /* background-color: aqua; */
+  font-weight: bold;
+}
+#input1,#input2{
+  width:80%;
+  height: 40px;
+  margin-left: 10%;
+}
+.submit{
+  width:80%;
+  height: 25px;
+  margin-left: 10%;
+  background-color: rgb(4, 4, 48);
+  color: white;
+}
+.collections{
+  border: 1.5px solid black;
+  padding: 20px;
+}
+.collections:hover{
+box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+.outerDiv{
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  text-align: center;
+  gap:10px;
+}
+.rate{
+  border: 1px solid black;
+  width:15%;
+  margin: auto;
+  background-color: green;
+  color: white;
+  border-radius: 10%;
+  margin-top: 5%;
+
+}
+.para{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+  opacity: 50%;
+  margin-top: 10%;
+}
+.button{
+  background-color: rgb(3, 3, 34);
+  color: white;
+  margin-top: 10%;
+  padding: 6px;
+  border-radius: 10%;
+}
+.views{
+  border:3px solid black;
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+.main_dis{
+  /* display: grid;
+  grid-template-columns: repeat(4,1fr); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap:10px;
+}
+.divv{
+  border:3px solid black;
+}
+.plus_minus{
+  display: flex;
+  justify-content: space-evenly;
+  width:27%;
+  margin: auto;
+  margin-top: 1%;
+}
+.minus,.add{
+  width:20%;
+  height: 25px;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  padding: 0px;
+}
+.remove{
+  width:13%;
+  height: 30px;
+  margin: auto;
+  margin-top: 1%;
+  background-color: rgb(184, 191, 198);
+  font-weight: bold;
+}
+.mainContainer{
+  display: grid;
+  width:700px;
+  margin: auto;
+  grid-template-columns: 50% 50%;
+  margin-top: 2%;
+}
+.subsContainer{
+  background-image: url(image.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  /* width: 50%; */
+}
+::placeholder {
+  color: rgb(212, 205, 205);
+  opacity: 1; /* Firefox */
+  font-size: 16px;
+  font-weight: 500;
 }
